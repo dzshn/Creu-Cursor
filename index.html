@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cursor trail test</title>
+        <script>
+            var currentTrail = 1
+            var num = 1
+
+            var msX = 1000
+            var msY = 1000
+
+            function msev(event) {
+                msX = event.clientX
+                msY = event.clientY
+                document.getElementById("mouse6").style.left = msX + "px"
+                document.getElementById("mouse6").style.top  = msY + "px"
+                document.getElementById("cursor").style.left = msX + "px"
+                document.getElementById("cursor").style.top  = msY + "px"
+            }
+
+            function trail() {
+                document.getElementById("mouse" + num).style.left = msX + "px"
+                document.getElementById("mouse" + num).style.top  = msY + "px"
+            }
+
+            function cycle() {
+                num++
+                if (num > 5) {
+                    num = 1
+                }
+            }
+
+            setInterval(trail, 100)
+            setInterval(cycle, 15)
+        </script>
+        <style>
+            html, body {
+                height: 100%;
+                width:  100%;
+                margin: 0%;
+                cursor: none;
+            }
+            img {
+                position: absolute;
+                pointer-events: none;
+                left: 1000px;
+                top: 1000px;
+            }
+        </style>
+        <img src="assets/mouse1.gif" id="mouse1">
+        <img src="assets/mouse2.gif" id="mouse2">
+        <img src="assets/mouse3.gif" id="mouse3">
+        <img src="assets/mouse4.gif" id="mouse4">
+        <img src="assets/mouse5.gif" id="mouse5">
+        <img src="assets/mouse6.gif" id="mouse6">
+        <img src="assets/cursor.gif" id="cursor">
+    </head>
+    <body onmousemove="msev(event)">
+    </body>
+</html>
