@@ -1,0 +1,40 @@
+article {
+    background-color: #082378;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 75%;
+}
+
+body {
+    background-color: #4581A5;
+    background-image: url("background.png");
+    background-repeat: repeat;
+    background-size: 350px;
+    color: #a0a0f0;
+    font-family: 'Roboto';
+    margin: 0%;
+    width: 100%;
+}
+
+header {
+    margin: auto;
+    width: 95%;
+    text-align: center;
+    background-color: #0a156f;
+    border-color: #05155f;
+    border-radius: 5px;
+    border-width: 3px;
+}
+
+.code {
+    border-radius: 5px;
+    background-color: #000000;
+    padding: 10px;
+}
+
+.content {
+    padding: 10px;
+}
