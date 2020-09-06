@@ -1,4 +1,5 @@
-var num = var msX = -100
+var num =
+var msX = -100
 var msY = -100
 
 window.onload = function() {
