@@ -1,4 +1,4 @@
-var num =
+var num = 1
 var msX = -100
 var msY = -100
 
