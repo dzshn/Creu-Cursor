@@ -1,12 +1,10 @@
-var num = 1
-
-var msX = -100
+var num = var msX = -100
 var msY = -100
 
 window.onload = function() {
     var cursorhtml = ''
     for (var i = 1; i < 7; i++) {
-        cursorhtml += "<img src='assets/mouse"+i+".gif' id='mouse"+i+"' style='position: absolute; left: -100px; pointer-events: none;'>"
+        cursorhtml += "<img src='https://raw.githubusercontent.com/leninnog/Creu-Cursor/master/assets/mouse"+i+".gif' id='mouse"+i+"' style='position: absolute; left: -100px; pointer-events: none;'>"
     }
     document.body.innerHTML = cursorhtml+document.body.innerHTML
 }
