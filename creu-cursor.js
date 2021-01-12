@@ -5,7 +5,7 @@ var msY = -100
 window.onload = function() {
     var cursorhtml = ''
     for (var i = 1; i < 7; i++) {
-        cursorhtml += "<img src='https://leninnog.github.io/Creu-Cursor/assets/mouse"+i+".gif' id='mouse"+i+"' style='position: absolute; left: -100px; pointer-events: none;'>"
+        cursorhtml += "<img src='https://dzshn.github.io/Creu-Cursor/assets/mouse"+i+".gif' id='mouse"+i+"' style='position: absolute; left: -100px; pointer-events: none;'>"
     }
     document.body.innerHTML = cursorhtml+document.body.innerHTML
 }
